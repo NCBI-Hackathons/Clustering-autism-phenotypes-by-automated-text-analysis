@@ -1,18 +1,19 @@
 from Bio import Entrez
+from Bio import SeqIO
 
 # retrieve and display data from PubMed
 
-my_em = "shussainather@gmail.com"
-db = "pubmed"
+Entrez.email = "shussainather@gmail.com"
+db = "gene"
 term = "autism"
-h_search = Entrez.esearch(db=db, email=my_em, term=term)
+h_search = Entrez.esearch(db=db, email=Entrez.email, term=term)
 record = Entrez.read(h_search)
 res_ids = record["IdList"]
 for r_id in res_ids:
-    h_summ = Entrez.esummary(db=db, id=r_id, email=my_em)
-    summ = Entrez.read(h_summ)
+    h_summ = Entrez.esummary(db=db, id=r_id, email=Entrez.email) # summary as retrieved by Entrez
+    summ = Entrez.read(h_summ) # summary of the text
     print(r_id)
-    print(summ[0]["Description"])
-    print(summ[0]["Summary"])
+    print(summ)
     print("==============================================")
+
 
