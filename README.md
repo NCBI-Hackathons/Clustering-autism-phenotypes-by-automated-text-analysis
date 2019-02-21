@@ -39,3 +39,10 @@ We are taking the approach of doing a literature-wise analysis by processing all
 3b.	Perform text-processing (maybe just stemming and tokenization) to extract segments/tokens.
 4.	OUTPUT: Output disease-specific clusters based on co-occurrence of topics/tokens/segments.
 5.	Analysis of output clusters.
+
+## How to Use
+
+## People / Team
+
+## Presentation
+[Proposed Word](https://docs.google.com/presentation/d/1FBevl6DZ992tMjkpXs78eWMgZaK5nbDodG5yecXeyb4/edit#slide=id.g4fc7003a8a_0_13)
