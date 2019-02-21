@@ -33,6 +33,9 @@ We are taking the approach of doing a literature-wise analysis by processing all
 
 
 ## Proposed Workflow
+
+<img src='phenoclass.jpg'>
+
 1.	INPUT: Collect user-supplied query.
 2.	Extract abstracts from NCBI's PubMed database.
 3a.	Use LDA (or other natural language processing method) to extract topics from each abstract.
