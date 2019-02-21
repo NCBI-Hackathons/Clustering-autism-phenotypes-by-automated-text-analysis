@@ -43,6 +43,17 @@ We are taking the approach of doing a literature-wise analysis by processing all
 ## How to Use
 
 ## People / Team
+Wayne Pereanu
+
+Syed Hussain Ather
+
+Jifan Gao
+
+Kyle Lemoi
+
+Jack Sklar
+
+Olaitan Awe
 
 ## Presentation
 [Proposed Work](https://docs.google.com/presentation/d/1FBevl6DZ992tMjkpXs78eWMgZaK5nbDodG5yecXeyb4/edit#slide=id.g4fc7003a8a_0_13)
