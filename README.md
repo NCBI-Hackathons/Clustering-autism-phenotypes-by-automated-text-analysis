@@ -1,4 +1,4 @@
-# Clustering-autism-phenotypes-by-automated-text-analysis
+# Clustering Autism Phenotypes by Automated Text Analysis
 
 ## Background
 Autism is a brain-based disorder that affects how information is processed. Its cause is not known. Genetic factors are thought to be responsible for 70-90% of cases. There are also related environmental factors.
