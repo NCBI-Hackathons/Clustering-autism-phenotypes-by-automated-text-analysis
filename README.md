@@ -34,7 +34,7 @@ We are taking the approach of doing a literature-wise analysis by processing all
 
 ## Proposed Workflow
 
-<img src='phenoclass.jpg'>
+![image](assets/phenoclass.jpg)
 
 1.	INPUT: Collect user-supplied query.
 2.	Extract abstracts from NCBI's PubMed database.
