@@ -5,8 +5,10 @@
 ## What does PhenoClass do?
 PhenoClass is a pipeline that will take your PubMed query and output clusters of phenotypes and/or genes based on their co-occurrence in the published literature.
 
+
 ## Why should you use PhenoClass?
 The ability to subclassify a disease can directly affect diagnosis and treatment options for a patient. PhenoClass allows you to determine if a disease of interest can be further classified based on phenotypic data from the entire corpus of published data.
+
 
 ## Background
 Autism is a brain-based disorder that affects how information is processed. Its cause is not known. Genetic factors are thought to be responsible for 70-90% of cases. There are also related environmental factors.
@@ -22,7 +24,7 @@ Cluster analysis has been used by a number of researchers to try to determine if
 We are taking the approach of doing a literature-wise analysis by processing all abstracts from autism-related publications. We will try cluster analysis using diseases, genes, or topics mentioned in the abstracts. Scientific analysis of the resulting clusters from all related literature may help shed light on the etiology of autism.
 
 
-## Proposed Workflow
+## Workflow
 
 ![Workflow](assets/phenoclass_workflow.jpg "Phenoclass Workflow")
 
@@ -57,8 +59,6 @@ We are taking the approach of doing a literature-wise analysis by processing all
 [Tanaka S, Oi M, Fujino H, Kikuchi M, Yoshimura Y, Miura Y, Tsujii M, Ohoka H. Characteristics of communication among Japanese children with autism spectrum disorder: a cluster analysis using the Children's communication Checklist-2. Clin Linguist Phon. 2017;31(3):234–49.](https://www.ncbi.nlm.nih.gov/pubmed/27739870)
 
 
-## How to Use
-
 ## People / Team
 Wayne Pereanu
 
@@ -72,5 +72,6 @@ Jack Sklar
 
 Olaitan I. Awe
 
+
 ## Presentation
-[Proposed Work](https://docs.google.com/presentation/d/1FBevl6DZ992tMjkpXs78eWMgZaK5nbDodG5yecXeyb4/)
+[Overview](https://docs.google.com/presentation/d/1FBevl6DZ992tMjkpXs78eWMgZaK5nbDodG5yecXeyb4/)
