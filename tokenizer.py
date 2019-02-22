@@ -64,8 +64,7 @@ def OneHot(text):
     return gene_to_vec
     
 start = time.time()
-pubmed_temp = pubmed_df.iloc[:1,:]
-pubmed_temp.loc[0,"Abstracts"] = "abnormality of body height"
+pubmed_temp = pubmed_df.iloc[:10,:]
 pubmed_temp["present_genes"] = pubmed_temp["Abstracts"].apply(OneHot)
 end = time.time()
 print(end - start)
