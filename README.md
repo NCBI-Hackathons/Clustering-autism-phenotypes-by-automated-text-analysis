@@ -45,10 +45,15 @@ We are taking the approach of doing a literature-wise analysis by processing all
 ![Workflow](assets/phenoclass_workflow.jpg "Phenoclass Workflow")
 
 1.	INPUT: Collect user-supplied query e.g. "autism" and additional clustering parameters.
+
 2a.	Extract abstracts and keywords from the result of NCBI's PubMed query.
+
 2b.	Load dictionary to tokenize abstracts for clustering and cluster-metadata analysis.
+
 3.	Perform text-processing (maybe just stemming and tokenization) to extract segments/tokens.
+
 4.	OUTPUT: Output disease-specific clusters based on co-occurrence of topics/tokens/segments.
+
 5.	Analysis of output clusters.
 
 ## How to Use
