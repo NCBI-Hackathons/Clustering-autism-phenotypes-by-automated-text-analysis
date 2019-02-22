@@ -41,7 +41,8 @@ else:
     synonym_dict = dict(zip(gene_df[0], gene_df[1]))
 
 
-
+###Replace ontology synonyms with their parent term (Not currently being used)
+    
 def replaceSynonym(line):
     line_no_special = re.sub(r"[^a-zA-Z0-9]+", ' ', line)
     line_no_special = line_no_special
