@@ -1,5 +1,13 @@
 # Clustering Autism Phenotypes by Automated Text Analysis
 
+### A versatile tool to classify diseases using cluster analysis of published phenotypic data
+
+## What is PhenoClass?
+PhenoClass is a pipeline that will take your PubMed query and output clusters of phenotypes and/or genes based on their co-occurrence in the published literature.
+
+## Why should you use PhenoClass?
+The ability to subclassify a disease can directly affect diagnosis and treatment options for a patient. PhenoClass allows you to determine if a disease of interest can be further classified based on phenotypic data from the entire corpus of published data.
+
 ## Background
 Autism is a brain-based disorder that affects how information is processed. Its cause is not known. Genetic factors are thought to be responsible for 70-90% of cases. There are also related environmental factors.
 
