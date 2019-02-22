@@ -2,7 +2,7 @@
 
 ### A versatile tool to classify diseases using cluster analysis of published phenotypic data
 
-## What is PhenoClass?
+## What does PhenoClass do?
 PhenoClass is a pipeline that will take your PubMed query and output clusters of phenotypes and/or genes based on their co-occurrence in the published literature.
 
 ## Why should you use PhenoClass?
@@ -44,10 +44,10 @@ We are taking the approach of doing a literature-wise analysis by processing all
 
 ![Workflow](assets/phenoclass_workflow.jpg "Phenoclass Workflow")
 
-1.	INPUT: Collect user-supplied query.
-2.	Extract abstracts from NCBI's PubMed database.
-3a.	Use LDA (or other natural language processing method) to extract topics from each abstract.
-3b.	Perform text-processing (maybe just stemming and tokenization) to extract segments/tokens.
+1.	INPUT: Collect user-supplied query e.g. "autism" and additional clustering parameters.
+2a.	Extract abstracts and keywords from the result of NCBI's PubMed query.
+2b.	Load dictionary to tokenize abstracts for clustering and cluster-metadata analysis.
+3.	Perform text-processing (maybe just stemming and tokenization) to extract segments/tokens.
 4.	OUTPUT: Output disease-specific clusters based on co-occurrence of topics/tokens/segments.
 5.	Analysis of output clusters.
 
