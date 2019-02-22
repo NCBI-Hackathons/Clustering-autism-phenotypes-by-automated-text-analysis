@@ -26,7 +26,7 @@ We are taking the approach of doing a literature-wise analysis by processing all
 
 ## Workflow
 
-![Workflow](assets/phenoclass_workflow.jpg "Phenoclass Workflow")
+![Workflow](word_cloud/phenoclass_workflow.jpg "Phenoclass Workflow")
 
 1.	INPUT: Collect user-supplied query e.g. "autism" and additional clustering parameters.
 
@@ -39,6 +39,13 @@ We are taking the approach of doing a literature-wise analysis by processing all
 4.	OUTPUT: Output disease-specific clusters based on co-occurrence of topics/tokens/segments.
 
 5.	Analysis of output clusters.
+
+## Results
+![Cluster1](assets/clu1.png "Phenoclass Cluster1")
+
+![Cluster2](assets/clu2.png "Phenoclass Cluster2")
+
+![Cluster3](assets/clu3.png "Phenoclass Cluster3")
 
 
 ## Papers that have used cluster analysis
