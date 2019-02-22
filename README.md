@@ -1,13 +1,13 @@
-# Clustering Autism Phenotypes by Automated Text Analysis
+# Classifying Diseases by Clustering Phenotypes using Automated Text Analysis
 
 ### A versatile tool to classify diseases using cluster analysis of published phenotypic data
 
-## What does PhenoClass do?
-PhenoClass is a pipeline that will take your PubMed query and output clusters of phenotypes and/or genes based on their co-occurrence in the published literature.
+## What does PubClass do?
+PubClass is a pipeline that will take your PubMed query and output clusters of phenotypes and/or genes based on their co-occurrence in the published literature.
 
 
-## Why should you use PhenoClass?
-The ability to subclassify a disease can directly affect diagnosis and treatment options for a patient. PhenoClass allows you to determine if a disease of interest can be further classified based on phenotypic data from the entire corpus of published data.
+## Why should you use PubClass?
+The ability to subclassify a disease can directly affect diagnosis and treatment options for a patient. PubClass allows you to determine if a disease of interest can be further classified based on phenotypic data from the entire corpus of published data.
 
 
 ## Background
