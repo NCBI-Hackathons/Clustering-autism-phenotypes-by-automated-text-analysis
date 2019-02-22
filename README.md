@@ -22,6 +22,23 @@ Cluster analysis has been used by a number of researchers to try to determine if
 We are taking the approach of doing a literature-wise analysis by processing all abstracts from autism-related publications. We will try cluster analysis using diseases, genes, or topics mentioned in the abstracts. Scientific analysis of the resulting clusters from all related literature may help shed light on the etiology of autism.
 
 
+## Proposed Workflow
+
+![Workflow](assets/phenoclass_workflow.jpg "Phenoclass Workflow")
+
+1.	INPUT: Collect user-supplied query e.g. "autism" and additional clustering parameters.
+
+2a.	Extract abstracts and keywords from the result of NCBI's PubMed query.
+
+2b.	Load dictionary to tokenize abstracts for clustering and cluster-metadata analysis.
+
+3.	Perform text-processing (maybe just stemming and tokenization) to extract segments/tokens.
+
+4.	OUTPUT: Output disease-specific clusters based on co-occurrence of topics/tokens/segments.
+
+5.	Analysis of output clusters.
+
+
 ## Papers that have used cluster analysis
 [Kienle X, Freiberger V, Greulich H, Blank R. Autism Spectrum disorder and DSM-5: Spectrum or cluster? Prax Kinderpsychol Kinderpsychiatr. 2015;64(6):412–28.](https://www.ncbi.nlm.nih.gov/pubmed/26289149)
 
@@ -39,22 +56,6 @@ We are taking the approach of doing a literature-wise analysis by processing all
 
 [Tanaka S, Oi M, Fujino H, Kikuchi M, Yoshimura Y, Miura Y, Tsujii M, Ohoka H. Characteristics of communication among Japanese children with autism spectrum disorder: a cluster analysis using the Children's communication Checklist-2. Clin Linguist Phon. 2017;31(3):234–49.](https://www.ncbi.nlm.nih.gov/pubmed/27739870)
 
-
-## Proposed Workflow
-
-![Workflow](assets/phenoclass_workflow.jpg "Phenoclass Workflow")
-
-1.	INPUT: Collect user-supplied query e.g. "autism" and additional clustering parameters.
-
-2a.	Extract abstracts and keywords from the result of NCBI's PubMed query.
-
-2b.	Load dictionary to tokenize abstracts for clustering and cluster-metadata analysis.
-
-3.	Perform text-processing (maybe just stemming and tokenization) to extract segments/tokens.
-
-4.	OUTPUT: Output disease-specific clusters based on co-occurrence of topics/tokens/segments.
-
-5.	Analysis of output clusters.
 
 ## How to Use
 
