@@ -11,27 +11,40 @@ import pandas as pd
 import numpy as np
 import re
 import time
-
+import sys
 
 phenotype_df = pd.read_csv("./Clustering-autism-phenotypes-by-automated-text-analysis/dictionaries/HPO_synonym_map.txt", header = None, sep = "\t")
 gene_df = pd.read_csv("./Clustering-autism-phenotypes-by-automated-text-analysis/dictionaries/gene_name_map.txt", header = None, sep = "\t")
+
+
 pubmed_df = pd.read_csv("./Clustering-autism-phenotypes-by-automated-text-analysis/pubmed_bulk/total.csv", sep = "\t")
 pubmed_df.dropna(subset=[ 'Abstracts'], inplace = True)
+pubmed_df["Abstracts"] = pubmed_df["Abstracts"].str.lower()
+pubmed_df["Title"] = pubmed_df["Title"].str.lower()
+
+#if len(sys.argv) == 1:
+#    print "Default token-database: Human Phenotype Ontology"    
+#feature = sys.argv[1]
+feature = "Phenotype"
 
 gene_list = gene_df[1]
-phenotype_list = phenotype_df[0]
-
-clust_features = phenotype_list
-clust_dict = dict(zip(phenotype_df[0], phenotype_df.index))
-synonym_dict = dict(zip(phenotype_list[0], phenotype_list[1]))
+phenotype_list = phenotype_df[1].unique()
 
 
-#%%
+if feature == "Phenotype":
+    clust_features = phenotype_list
+    clust_dict = dict(zip(phenotype_list, range(len(phenotype_list))))
+    synonym_dict = dict(zip(phenotype_df[0], phenotype_df[1]))
+else:
+    clust_features = gene_list
+    clust_dict = dict(zip(gene_list[0], gene_list.index))
+    synonym_dict = dict(zip(gene_df[0], gene_df[1]))
 
 
 
 def replaceSynonym(line):
     line_no_special = re.sub(r"[^a-zA-Z0-9]+", ' ', line)
+    line_no_special = line_no_special
     for syn in synonym_dict:
         syn_no_special = re.sub(r"[^a-zA-Z0-9]+", ' ', syn)
         if re.match(syn_no_special, line_no_special):
@@ -52,7 +65,7 @@ def OneHot(text):
     
 start = time.time()
 pubmed_temp = pubmed_df.iloc[:1,:]
-pubmed_temp.loc[0,"Abstracts"] = "Abnormality of body height"
+pubmed_temp.loc[0,"Abstracts"] = "abnormality of body height"
 pubmed_temp["present_genes"] = pubmed_temp["Abstracts"].apply(OneHot)
 end = time.time()
 print(end - start)
