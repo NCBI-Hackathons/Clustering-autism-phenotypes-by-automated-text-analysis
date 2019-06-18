@@ -67,7 +67,7 @@ We are taking the approach of doing a literature-wise analysis by processing all
 
 
 ## People / Team
-Wayne Pereanu
+Wayne Sebastian Pereanu
 
 Syed Hussain Ather
 
